@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+```markdown
+# TianYong Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TianYong Management System is a comprehensive web-based solution designed to optimize and streamline business operations. It provides a centralized platform for managing inventory, employees, customer interactions, and financial data.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **📦 Inventory Management** – Real-time stock tracking, batch management, automated alerts.
+- **👥 Employee Management** – Payroll processing, attendance tracking, task assignments.
+- **📊 Customer Relationship Management (CRM)** – Contact management, customer insights, and analytics.
+- **💰 Financial Management** – Income and expense tracking, tax customization, financial reporting.
+- **📈 Reporting & Analytics** – Customizable data reports, visual analytics, and insights.
+- **🔐 Secure Access Control** – Role-based authentication and authorization.
+- **🎨 Modern UI** – Built with **Ant Design**, ensuring a sleek and responsive user interface.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Category       | Technology |
+|---------------|------------|
+| **Frontend**  | React, React Router, Ant Design |
+| **State Management** | Redux Toolkit, React Redux |
+| **Data Handling** | Axios, Mock.js |
+| **Charts & Visualization** | ECharts |
+| **Development** | Create React App, Web Vitals |
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Project Setup
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Node.js** (16+ recommended)
+- **npm** (8+ recommended)
+- **Git** (for version control)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository and install dependencies:
 
-### `npm run eject`
+```bash
+git clone https://github.com/your-github-username/TianYongManagementSystem.git
+cd TianYongManagementSystem
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔨 Development
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Start the development server:
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Runs the app in development mode.
+- Open **[http://localhost:3000](http://localhost:3000)** to view it in the browser.
+- The page will reload when you make changes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📦 Production Build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Generate a production-ready build:
 
-### Analyzing the Bundle Size
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Creates an optimized build in the `build` directory.
+- Ready for deployment on any static hosting provider (e.g., Vercel, Netlify, AWS).
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🔧 Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Environment variables should be stored in a `.env` file:
 
-### Deployment
+```ini
+REACT_APP_API_URL=https://api.example.com
+REACT_APP_ENV=development
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Make sure to add `.env` to `.gitignore` to prevent exposing sensitive data.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🛠 Available Scripts
+
+| Command            | Description |
+|--------------------|-------------|
+| `npm start`       | Start development server |
+| `npm run build`   | Create production build |
+| `npm test`        | Run tests |
+| `npm run eject`   | Eject from Create React App |
+
+---
+
+## 📊 Data Mocking
+
+The project includes **Mock.js** for simulating API responses:
+
+- Mock API calls in development without a backend.
+- Configured within the project for quick prototyping.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. **Fork** the repository.
+2. **Create a new branch** (`git checkout -b feature-branch`).
+3. **Commit your changes** (`git commit -m "Added new feature"`).
+4. **Push to the branch** (`git push origin feature-branch`).
+5. **Submit a Pull Request**.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+```
