@@ -12,6 +12,7 @@ import { Button, Layout, Avatar, Dropdown } from 'antd';
 import './index.css'
 import { useDispatch } from 'react-redux';
 import { collapseMenu } from "../../store/reducers/tab";
+import { useNavigate } from 'react-router-dom';
 
 // header区域解构出来
 const { Header, Sider, Content } = Layout;
@@ -19,8 +20,11 @@ const { Header, Sider, Content } = Layout;
 
 
 const CommonHeader = ({ collapsed }) => {
+    const navigate = useNavigate()
     const logout = () => {
-
+        localStorage.removeItem('token')
+        // window.location.href = '/login'
+        navigate('/login')
     }
 
     // 头像下拉菜单
@@ -37,12 +41,11 @@ const CommonHeader = ({ collapsed }) => {
         {
             key: '2',
             label: (
-                <a onClick={() => logout} target="_blank" rel="noopener noreferrer" >
+                <a onClick={() => logout()} target="_blank" rel="noopener noreferrer" >
                     退出
                 </a>
             ),
             icon: <SmileOutlined />,
-            disabled: true,
         }
     ];
 
